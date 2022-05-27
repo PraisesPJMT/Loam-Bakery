@@ -12,24 +12,27 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 a {
     text-decoration: none;
 }
 
-/**********HEADER CODES***************/
+/**********HEADER AND FOOTER CODES***************/
 header {
-    width: 100vw;
     height: 60px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* border: 1px solid #B1534B; */
     align-items: center;
 }
-
-header a {
+header, footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+header a, footer a, .brown {
     color: #B1534B;
+}
+footer {
+    padding: 50px 0;
 }
 /* 47443E */
 #header {
@@ -42,7 +45,7 @@ header a {
     font-weight: 500;
     margin: 0 30px;
 }
-nav {
+nav, #ftnav {
     font-size: .9rem;
     font-weight: 500;
 }
@@ -53,5 +56,23 @@ nav a {
     width: 25px;
     margin-right: 30px;
 }
-
-
+#address {
+    margin-left: 30px;
+}
+.social {
+    width: 15px;
+    padding: 0 10px;
+}
+#ft-aside {
+    display: inline-flex;
+}
+#ftnav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-decoration: underline;
+    line-height: 1.3rem;
+}
+#social-div {
+    margin-right: 80px;
+}
