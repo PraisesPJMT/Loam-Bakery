@@ -12,7 +12,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, sans-serif;
 }
 a {
     text-decoration: none;
@@ -30,6 +30,7 @@ header, footer {
 }
 header a, footer a, .brown {
     color: #B1534B;
+    display: block;
 }
 footer {
     padding: 50px 0;
@@ -50,7 +51,8 @@ nav, #ftnav {
     font-weight: 500;
 }
 nav a {
-    margin: 0 10px;
+    margin: 5px 10px;
+    display: inline-flex;
 }
 #cart {
     width: 25px;
@@ -69,10 +71,14 @@ nav a {
 #ftnav {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 250px;
     text-decoration: underline;
     line-height: 1.3rem;
 }
+#ftnav a {
+    display: block;
+    padding: 1px 0;
+}
 #social-div {
-    margin-right: 80px;
+    margin-right: 100px;
 }
